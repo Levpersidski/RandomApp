@@ -13,17 +13,24 @@ class SettingsViewController: UIViewController {
     @IBOutlet var maximumValueTF: UITextField!
     
     
-    var minimumValue:String!
-    var maximumValue:String!
+    var randomNumber: RandomNumber!
+    var delegate: SettingsViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        minimumValueTF.text = minimumValue
-        maximumValueTF.text = maximumValue
+        minimumValueTF.text = String(randomNumber.minimumValue)
+        maximumValueTF.text = String(randomNumber.maximumValue)
         
     }
+   
    
     @IBAction func cancelButtonPressed() {
         dismiss(animated: true)
     }
+    
+    @IBAction func SaveButtonPressed() {
+        delegate.setNewValues(for: minimumValueTF.text ?? "0", and: maximumValueTF.text ?? "100")
+        dismiss(animated: true)
+    }
+    
 }
