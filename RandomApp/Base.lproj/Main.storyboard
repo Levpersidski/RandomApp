@@ -139,12 +139,12 @@
                     <navigationItem key="navigationItem" title="Settings" id="d8U-VR-xq1">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="YkB-nL-mb1">
                             <connections>
-                                <action selector="cancelButtonPressed:" destination="Vbj-cH-ZPn" id="oBZ-70-h06"/>
+                                <action selector="cancelButtonPressed" destination="Vbj-cH-ZPn" id="YJI-xE-gFR"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Fxg-cc-e4h">
                             <connections>
-                                <action selector="SaveButtonPressed:" destination="Vbj-cH-ZPn" id="tyZ-10-zvn"/>
+                                <action selector="SaveButtonPressed" destination="Vbj-cH-ZPn" id="YAA-ef-iCX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
